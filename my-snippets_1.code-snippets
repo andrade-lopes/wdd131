@@ -1,0 +1,106 @@
+{
+  "Estrutura HTML global": {
+    "prefix": "htmlbase",
+    "body": [
+      "<!DOCTYPE html>",
+      "<html lang=\"pt-br\">",
+      "<head>",
+      "  <meta charset=\"UTF-8\">",
+      "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+      "  <title>$1</title>",
+      "</head>",
+      "<body>",
+      "  $2",
+      "</body>",
+      "</html>"
+    ],
+    "description": "Estrutura b\u00e1sica HTML utiliz\u00e1vel em qualquer linguagem"
+  },
+  "Card reutiliz\u00e1vel": {
+    "prefix": "cardhtml",
+    "body": [
+      "<div class=\"card\">",
+      "  <img src=\"$1\" alt=\"Imagem do card\">",
+      "  <h2>$2</h2>",
+      "  <p>$3</p>",
+      "</div>"
+    ],
+    "description": "Componente de card com imagem e texto"
+  },
+  "Formul\u00e1rio padr\u00e3o": {
+    "prefix": "formulario",
+    "body": [
+      "<form action=\"$1\" method=\"post\">",
+      "  <label for=\"nome\">Nome:</label>",
+      "  <input type=\"text\" id=\"nome\" name=\"nome\" required>",
+      "",
+      "  <label for=\"email\">Email:</label>",
+      "  <input type=\"email\" id=\"email\" name=\"email\" required>",
+      "",
+      "  <button type=\"submit\">Enviar</button>",
+      "</form>"
+    ],
+    "description": "Formul\u00e1rio HTML padr\u00e3o para reutiliza\u00e7\u00e3o"
+  },
+  "Navbar simples": {
+    "prefix": "navbar",
+    "body": [
+      "<nav>",
+      "  <ul>",
+      "    <li><a href=\"#\">In\u00edcio</a></li>",
+      "    <li><a href=\"#\">Sobre</a></li>",
+      "    <li><a href=\"#\">Servi\u00e7os</a></li>",
+      "    <li><a href=\"#\">Contato</a></li>",
+      "  </ul>",
+      "</nav>"
+    ],
+    "description": "Menu de navega\u00e7\u00e3o simples"
+  },
+  "Modal b\u00e1sico": {
+    "prefix": "modal",
+    "body": [
+      "<div id=\"myModal\" class=\"modal\">",
+      "  <div class=\"modal-content\">",
+      "    <span class=\"close\">&times;</span>",
+      "    <p>$1</p>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Estrutura de modal (popup) simples"
+  },
+  "Lista com \u00edcones": {
+    "prefix": "listaicones",
+    "body": [
+      "<ul>",
+      "  <li><i class=\"icon-check\"></i> Item 1</li>",
+      "  <li><i class=\"icon-check\"></i> Item 2</li>",
+      "  <li><i class=\"icon-check\"></i> Item 3</li>",
+      "</ul>"
+    ],
+    "description": "Lista com \u00edcones (Font Awesome, por exemplo)"
+  },
+  "Carousel b\u00e1sico (com Bootstrap)": {
+    "prefix": "carousel",
+    "body": [
+      "<div id=\"carouselExample\" class=\"carousel slide\" data-bs-ride=\"carousel\">",
+      "  <div class=\"carousel-inner\">",
+      "    <div class=\"carousel-item active\">",
+      "      <img src=\"$1\" class=\"d-block w-100\" alt=\"...\">",
+      "    </div>",
+      "    <div class=\"carousel-item\">",
+      "      <img src=\"$2\" class=\"d-block w-100\" alt=\"...\">",
+      "    </div>",
+      "  </div>",
+      "  <button class=\"carousel-control-prev\" type=\"button\" data-bs-target=\"#carouselExample\" data-bs-slide=\"prev\">",
+      "    <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>",
+      "    <span class=\"visually-hidden\">Anterior</span>",
+      "  </button>",
+      "  <button class=\"carousel-control-next\" type=\"button\" data-bs-target=\"#carouselExample\" data-bs-slide=\"next\">",
+      "    <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>",
+      "    <span class=\"visually-hidden\">Pr\u00f3ximo</span>",
+      "  </button>",
+      "</div>"
+    ],
+    "description": "Estrutura de carousel usando Bootstrap"
+  }
+}
