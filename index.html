@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – José Lopes</title>
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals. This page was created by José António Andrade Lopes and includes course project information, personal links, and educational resources.">
+    <meta name="author" content="José António Andrade Lopes">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/4?lang=eng&id=p6#p6"
+                        target="_blank">Favorite Scripture</a></li>
+                <li><a href="#" target="_blank">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>José António Andrade Lopes</h1>
+
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/about-me.jpeg" alt="My portrait or relevant image" width="300">
+            <p>I’m a passionate learner with a growing interest in web development. My background includes experience in
+                problem-solving, creative thinking, and working with technology. I enjoy exploring how websites are
+                built and how design
+                and functionality come together. Through this course, I aim to strengthen my HTML, CSS, and JavaScript
+                skills so I can
+                confidently build responsive, user-friendly websites. My goal is to eventually apply these skills in
+                real-world projects
+                and professional opportunities.</p>
+        </section>
+
+        <section class="card">
+            <h2>My Goals</h2>
+            <img src="images/goals.png" alt="An image representing goals or motivation" width="300">
+            <p>In WDD 131, I hope to build a strong foundation in dynamic web development by learning how to create
+                clean, responsive,
+                and interactive websites using HTML, CSS, and JavaScript. I'm especially excited to explore topics like
+                CSS Grid and
+                Flexbox for layout design, as well as JavaScript for adding real functionality to web pages. One of the
+                projects I’m
+                most looking forward to is the Final Project, where I can apply everything I’ve learned to create a
+                website from
+                scratch. I’m eager to grow my confidence in coding and gain practical experience that I can use in
+                future courses or
+                career paths.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> José António Andrade Lopes – Cape Verde</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        // Set the current year dynamically
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+
+        // Set the last modified date
+        document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+    </script>
+</body>
+
+</html>
