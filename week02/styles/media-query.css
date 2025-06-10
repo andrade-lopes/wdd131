@@ -1,0 +1,30 @@
+/* Apply the Roboto font throughout the page */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Common styling for header, main, and footer */
+header,
+main,
+footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #bbb;
+    padding: 1rem;
+    background-color: #e6f2ff;
+    /* Light blue background */
+}
+
+/* Grid layout for the main content */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* Styling for section elements */
+section {
+    padding: 1rem;
+    background-color: #ffffff;
+    /* White background */
+}
