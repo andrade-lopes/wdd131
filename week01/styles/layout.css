@@ -5,6 +5,11 @@
     padding: 0;
 }
 
+.highlight-name {
+    color: rgba(195, 195, 6, 0.918);
+    font-family: Bradley Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
 /* Body uses Grid for layout */
 body {
     display: grid;
@@ -24,13 +29,13 @@ header h1 {
     margin-bottom: 0.5rem;
 }
 
-/*header nav {
+header nav {
     background-color: #333;
     display: flex;
     text-align: justify;
     color: white;
 
-}*/
+}
 
 .nav-menu {
     background-color: #333;
@@ -40,19 +45,19 @@ header h1 {
 
 }
 
-/*.nav-menu {
+.nav-menu {
     background-color: #333;
     display: fl;
     gap: 1rem;
     list-style: none;
     padding: 1rem;
-}*/
+}
 
-/*.nav-menu a {
+.nav-menu a {
     color: white;
     text-decoration: none;
     display: flex;
-}*/
+}
 
 main {
     display: grid;
