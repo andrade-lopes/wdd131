@@ -29,7 +29,9 @@ nav {
     border: 0;
     background: none;
     color: #000;
-    position: _________; /*________; ________;*/
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }
 
 #menu::before {
@@ -43,7 +45,7 @@ nav {
 .navigation {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     list-style: none;
     background-color: #333;
     color: #fff;
