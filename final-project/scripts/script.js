@@ -10,17 +10,17 @@ const mindeloPlaces = [
   {
     name: "Laginha Beach",
     description: "A popular city beach with crystal-clear waters.",
-    image: "images/laginha.jpg"
+    image: "images/laginha.webp"
   },
   {
     name: "Belem Tower",
     description: "Replica of the Lisbon tower by the sea.",
-    image: "images/torre.jpg"
+    image: "images/torre.jpeg"
   },
   {
     name: "Monte Cara",
     description: "Iconic mountain shaped like a human face.",
-    image: "images/monte-cara.jpg"
+    image: "images/monte-cara.webp"
   }
 ];
 
