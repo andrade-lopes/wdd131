@@ -37,7 +37,7 @@ header .highlight {
 nav {
     background-color: var(--gray-dark);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: 2rem;
     padding: 0.75rem;
 }
