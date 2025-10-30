@@ -1,15 +1,63 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD131 - Initial Project</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 131 – Dynamic Web Fundamentals – Jose Lopes</title>
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals | Jose Lopes | Personal home page for learning HTML, CSS, and JavaScript fundamentals.">
+    <meta name="author" content="Jose Lopes">
+    <link rel="stylesheet" href="styles/base.css" />
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <h1>Welcome to WDD131!</h1>
-    <p>This is my first HTML file in this repository.</p>
+    <header>
+        <span id="course-title">WDD 131: Dynamic Web Fundamentals - Jose Lopes</span>
+        <nav>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+                target="_blank">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Jose Lopes</h1>
+
+        <section class="card">
+            <h2>About Me</h2>
+            <p>My name is Jose, and I live in Cabo Verde. I am currently studying web development and enjoy learning new
+                technologies. I love music, travel, and meaningful conversations.</p>
+            <img src="images/profile.jpeg" alt="Photo of Jose Lopes">
+            <h3>Mindelo, Cabo Verde</h3>
+            <p>Mindelo is a beautiful coastal city on the island of São Vicente, known for its vibrant culture, music,
+                and friendly people.</p>
+            <figure>
+                <img src="images/flag.png" alt="Flag of Cabo Verde">
+                <figcaption><em>Official Flag of Cabo Verde</em></figcaption>
+            </figure>
+        </section>
+
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+                <li><a href="https://placeholder.com/" target="_blank">Image Placeholder</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌸 Jose Lopes 🌸 Cabo Verde</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
