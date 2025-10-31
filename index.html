@@ -2,16 +2,15 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>WDD 131 – Dynamic Web Fundamentals – Jose Lopes</title>
-
     <meta name="description"
         content="WDD 131 – Dynamic Web Fundamentals | Jose Lopes | Personal home page with resources and biography.">
     <meta name="author" content="Jose Lopes">
 
-    <!-- ✅ Google Fonts (NO @import ALLOWED) -->
+    <!-- Google Fonts (link method, not @import) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -21,32 +20,34 @@
 </head>
 
 <body>
-
     <header>
-        <!-- ✅ Required span -->
+        <!-- required course-title span -->
         <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
 
-        <h1><span class="highlight">Jose Lopes</span></h1>
+        <!-- page visual title (non-h1) -->
+        <div class="name-banner">
+            <span class="highlight">Jose Lopes</span>
+        </div>
 
-        <!-- ✅ nav moved inside header -->
         <nav>
-            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
-                target="_blank">Scripture</a>
-            <a href="#">Final Project</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank"
+                rel="noopener">Scripture</a>
+            <a href="#" rel="noopener">Final Project</a>
         </nav>
     </header>
 
     <main>
-
+        <!-- single required h1 inside main -->
         <h1>Jose Lopes</h1>
 
         <section class="card about">
             <h2>About Me</h2>
             <div class="content">
                 <div class="text">
-                    <p>My name is Jose and I live in Cabo Verde. I am learning web development... </p>
+                    <p>My name is Jose and I live in Cabo Verde. I am learning web development and enjoy music, travel,
+                        and exploring technology.</p>
 
                     <h3>Mindelo, Cabo Verde</h3>
                     <hr>
@@ -54,11 +55,12 @@
                     <img src="images/flag.jpg" alt="Official flag of Cabo Verde" class="flag">
                     <p><em>Official Flag of Cabo Verde</em></p>
 
-                    <p>Mindelo is a vibrant coastal city...</p>
+                    <p>Mindelo is a vibrant coastal city on São Vicente Island, known for music and culture.</p>
                 </div>
 
                 <div class="photo">
-                    <img src="images/profile.jpg" alt="Photo of Jose Lopes">
+                    <!-- improved alt text -->
+                    <img src="images/profile.jpg" alt="Portrait photograph of Jose Lopes">
                 </div>
             </div>
         </section>
@@ -66,22 +68,22 @@
         <section class="card resources">
             <h2>Web Dev Resources</h2>
             <ul>
-                <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
-                <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
-                <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
-                <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
-                <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
-                <li><a href="https://via.placeholder.com/" target="_blank">Image Placeholder</a></li>
+                <li><a href="https://dev.to/" target="_blank" rel="noopener">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/" target="_blank" rel="noopener">Smashing Magazine</a>
+                </li>
+                <li><a href="https://css-tricks.com/" target="_blank" rel="noopener">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/" target="_blank" rel="noopener">Udemy</a></li>
+                <!-- changed to placehold.co which costuma ser aceito pelo validador -->
+                <li><a href="https://placehold.co/" target="_blank" rel="noopener">Image Placeholder</a></li>
             </ul>
         </section>
-
     </main>
 
     <footer>
         <p>&copy;<span id="currentyear"></span> 🌸 Jose Lopes 🌸 Cabo Verde</p>
         <p id="lastModified"></p>
     </footer>
-
 </body>
 
 </html>
