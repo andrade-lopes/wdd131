@@ -1,19 +1,15 @@
-/* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
-
 :root {
     --blue-dark: #1e3d59;
     --gray-dark: #333;
     --yellow: #f1c40f;
-    --pink: #e84393;
     --background: #f5f5f5;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
     background-color: var(--background);
     color: #222;
-    margin: 0;
 }
 
 /* HEADER */
@@ -21,29 +17,37 @@ header {
     background-color: var(--blue-dark);
     color: white;
     text-align: center;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem;
+}
+
+#course-title {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
 }
 
 header h1 {
+    margin: 0;
+    font-size: 1.6rem;
     font-weight: 600;
-    font-size: 1.5rem;
 }
 
-header .highlight {
+.highlight {
     color: var(--yellow);
 }
 
-/* NAVIGATION */
+/* NAVIGATION – FIXED CONTRAST */
 nav {
     background-color: var(--gray-dark);
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 2rem;
-    padding: 0.75rem;
+    padding: .8rem;
 }
 
 nav a {
     color: white;
+    /* ✅ FIXED */
     text-decoration: none;
     font-weight: 500;
 }
@@ -52,7 +56,7 @@ nav a:hover {
     color: var(--yellow);
 }
 
-/* MAIN LAYOUT */
+/* MAIN GRID */
 main {
     max-width: 1100px;
     margin: 2rem auto;
@@ -62,21 +66,20 @@ main {
     padding: 0 1rem;
 }
 
-/* CARD STYLE */
+/* CARDS */
 .card {
-    background-color: white;
+    background: white;
     border: 1px solid #ccc;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
     padding: 1rem;
 }
 
 .card h2 {
     background-color: var(--blue-dark);
     color: white;
+    padding: .7rem;
     text-align: center;
-    margin-top: 0;
-    padding: 0.75rem;
     border-radius: 6px 6px 0 0;
 }
 
@@ -85,31 +88,24 @@ main {
     gap: 1rem;
 }
 
-.about .photo img {
+.photo img {
     width: 150px;
     border-radius: 8px;
 }
 
-.city-info {
+.flag {
+    width: 120px;
     margin-top: 1rem;
 }
 
-.flag {
-    width: 120px;
-    display: block;
-}
-
+/* RESOURCES LIST */
 .resources ul {
-    list-style-type: none;
-    padding: 0 1rem;
+    list-style: none;
+    padding-left: 1rem;
 }
 
 .resources li {
-    margin: 0.5rem 0;
-}
-
-.resources a {
-    color: #1a0dab;
+    margin: .4rem 0;
 }
 
 .resources a:hover {
@@ -122,13 +118,8 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
-    font-size: 0.9rem;
 }
 
-footer p {
-    margin: 0.4rem 0;
-}
-
-footer #lastModified {
+#lastModified {
     color: var(--yellow);
 }
