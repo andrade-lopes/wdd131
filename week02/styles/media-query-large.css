@@ -1,0 +1,16 @@
+/* Apply when screen width ≥ 500px */
+@media screen and (min-width: 500px) {
+
+    /* Header changes */
+    header {
+        background-color: #000;
+        /* black background */
+        color: #fff;
+        /* white text */
+    }
+
+    /* Main becomes 2 equal columns */
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
