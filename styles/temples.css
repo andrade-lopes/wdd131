@@ -9,22 +9,42 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f6f8;
-    color: #222;
+    background-color: #ffffff;
+    color: #000;
 }
 
-/* ---------- Header & Nav ---------- */
+/* ---------- Header ---------- */
 header {
-    background-color: #2c4a6e;
-    color: #ffffff;
+    background-color: #4b1366;
+    color: white;
     padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header h1 {
-    text-align: center;
-    margin-bottom: 0.75rem;
-    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+}
+
+/* ---------- Hamburger ---------- */
+#menuButton {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.75rem;
+    cursor: pointer;
+}
+
+/* ---------- Navigation ---------- */
+nav {
+    display: none;
+    width: 100%;
+    background-color: #4b1366;
+}
+
+nav.open {
+    display: block;
 }
 
 nav ul {
@@ -36,22 +56,19 @@ nav ul {
 }
 
 nav a {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    width: 100%;
-    text-align: center;
-    transition: background-color 0.3s ease;
+    padding: 0.75rem;
 }
 
 /* Hover Effect */
 nav a:hover {
-    background-color: #1e344d;
+    background-color: #6a1b8c;
 }
 
 /* ---------- Main ---------- */
 main {
-    max-width: 800px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -59,7 +76,6 @@ main {
 main h2 {
     text-align: center;
     margin-bottom: 1rem;
-    font-family: 'Merriweather', serif;
 }
 
 /* ---------- Gallery Grid ---------- */
@@ -67,33 +83,27 @@ main h2 {
     display: grid;
     grid-template-columns: 1fr;
     /* ONE column mobile */
-    gap: 1rem;
-}
-
-figure {
-    background-color: #ffffff;
-    border-radius: 6px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    gap: 1.5rem;
 }
 
 figure img {
     width: 100%;
-    height: auto;
     display: block;
 }
 
 figcaption {
-    padding: 0.75rem;
     text-align: center;
-    font-weight: 700;
+    color: #6a1b8c;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
 }
 
 /* ---------- Footer ---------- */
 footer {
-    background-color: #e1e5ea;
+    background-color: #4b1366;
+    color: white;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
