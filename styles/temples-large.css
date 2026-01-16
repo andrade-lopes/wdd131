@@ -1,0 +1,17 @@
+@media only screen and (min-width: 40rem) {
+
+    /* ---------- Navigation ---------- */
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav a {
+        width: auto;
+    }
+
+    /* ---------- Gallery Grid ---------- */
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
