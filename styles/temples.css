@@ -15,7 +15,7 @@ body {
 
 /* ---------- Header ---------- */
 header {
-    background-color: #4b1366;
+    background-color: #715404;
     color: white;
     padding: 1rem;
     display: flex;
@@ -40,7 +40,7 @@ header h1 {
 nav {
     display: none;
     width: 100%;
-    background-color: #4b1366;
+    background-color: #715404;
 }
 
 nav.open {
@@ -94,14 +94,14 @@ figure img {
 
 figcaption {
     text-align: center;
-    color: #6a1b8c;
+    color: #715404;
     margin-top: 0.5rem;
     font-size: 0.9rem;
 }
 
 /* ---------- Footer ---------- */
 footer {
-    background-color: #4b1366;
+    background-color: #715404;
     color: white;
     text-align: center;
     padding: 1rem;
