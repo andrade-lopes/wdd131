@@ -4,19 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temple Album</title>
+    <title>Filtered Temples</title>
 
     <!-- Mobile-first CSS -->
     <link rel="stylesheet" href="styles/filtered-temples.css">
 
-    <!-- JavaScript -->
-    <script src="scripts/filtered-temples.js" defer></script>
 </head>
 
 <body>
 
     <header>
-        <h1>Temple Album</h1>
+        <h1>Filtered Temples</h1>
 
         <button id="menuButton" aria-label="Toggle Menu">☰</button>
 
@@ -33,18 +31,20 @@
 
     <main>
         <h2>Home</h2>
+        <!-- Cards will be created here dynamically -->
 
-        <section class="gallery">
-            
-        </section>
+        <section id="temples-container"></section>
     </main>
 
     <footer>
         <p>
             &copy; <span id="currentYear"></span> • Jose Lopes • Cape Verde
         </p>
-        <p id="lastModified"></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts/filtered-temples.js"></script>
 
 </body>
 

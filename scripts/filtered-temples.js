@@ -80,3 +80,68 @@ const temples = [
     },
     // Add more temple objects here...
 ];
+
+const container = document.querySelector("#temples-container");
+
+function displayTemples(templeList) {
+    container.innerHTML = "";
+
+    templeList.forEach(temple => {
+        const card = document.createElement("section");
+        card.classList.add("temple-card");
+
+        const name = document.createElement("h3");
+        name.textContent = temple.templeName;
+
+        const location = document.createElement("p");
+        location.textContent = `Location: ${temple.location}`;
+
+        const dedicated = document.createElement("p");
+        dedicated.textContent = `Dedicated: ${temple.dedicated}`;
+
+        const area = document.createElement("p");
+        area.textContent = `Area: ${temple.area.toLocaleString()} sq ft`;
+
+        const img = document.createElement("img");
+        img.src = temple.imageUrl;
+        img.alt = temple.templeName;
+        img.loading = "lazy";   // ✅ LAZY LOADING
+
+        card.appendChild(name);
+        card.appendChild(location);
+        card.appendChild(dedicated);
+        card.appendChild(area);
+        card.appendChild(img);
+
+        container.appendChild(card);
+    });
+}
+
+document.querySelector("#home").addEventListener("click", () => {
+    displayTemples(temples);
+});
+
+document.querySelector("#old").addEventListener("click", () => {
+    const oldTemples = temples.filter(t => new Date(t.dedicated).getFullYear() < 1900);
+    displayTemples(oldTemples);
+});
+
+document.querySelector("#new").addEventListener("click", () => {
+    const newTemples = temples.filter(t => new Date(t.dedicated).getFullYear() > 2000);
+    displayTemples(newTemples);
+});
+
+document.querySelector("#large").addEventListener("click", () => {
+    const largeTemples = temples.filter(t => t.area > 90000);
+    displayTemples(largeTemples);
+});
+
+document.querySelector("#small").addEventListener("click", () => {
+    const smallTemples = temples.filter(t => t.area < 10000);
+    displayTemples(smallTemples);
+});
+
+document.querySelector("#currentyear").textContent = new Date().getFullYear();
+document.querySelector("#lastModified").textContent = document.lastModified;
+
+displayTemples(temples);
