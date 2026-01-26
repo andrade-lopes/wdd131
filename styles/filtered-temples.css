@@ -51,7 +51,6 @@ nav ul {
     list-style: none;
     display: flex;
     flex-direction: column;
-    /* Mobile */
     align-items: center;
 }
 
@@ -61,9 +60,10 @@ nav a {
     padding: 0.75rem;
 }
 
-/* Hover Effect */
-nav a:hover {
+nav a:hover,
+nav a:focus {
     background-color: #6a1b8c;
+    outline: none;
 }
 
 /* ---------- Main ---------- */
@@ -78,37 +78,7 @@ main h2 {
     margin-bottom: 1rem;
 }
 
-/* ---------- Gallery Grid ---------- */
-.gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    /* ONE column mobile */
-    gap: 1.5rem;
-}
-
-figure img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-figcaption {
-    text-align: center;
-    color: #715404;
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-}
-
-/* ---------- Footer ---------- */
-footer {
-    background-color: #715404;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-    font-size: 0.85rem;
-}
-
+/* ---------- Temple Cards Grid ---------- */
 #temples-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -127,4 +97,34 @@ footer {
     width: 100%;
     height: auto;
     margin-top: 0.5rem;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background-color: #715404;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.85rem;
+}
+
+/* ---------- Desktop Layout ---------- */
+@media (min-width: 768px) {
+    #menuButton {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
+    }
 }
