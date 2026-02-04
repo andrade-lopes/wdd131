@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temple Album</title>
+    <title>Enhanced Temple Picture Album</title>
+    <meta name="description"
+        content="An enhanced temple picture album showcasing LDS temples with responsive design, accessibility, and dynamic filtering.">
 
     <!-- Mobile-first CSS -->
     <link rel="stylesheet" href="styles/temples.css">
@@ -19,11 +21,13 @@
     <header>
         <h1>Temple Album</h1>
 
-        <button id="menuButton" aria-label="Toggle Menu">☰</button>
+        <button id="menuButton" aria-label="Toggle navigation menu" aria-expanded="false">
+            ☰
+        </button>
 
-        <nav>
+        <nav aria-label="Primary Navigation">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="temples.html">Home</a></li>
                 <li><a href="#">Old</a></li>
                 <li><a href="#">New</a></li>
                 <li><a href="#">Large</a></li>
@@ -37,47 +41,47 @@
 
         <section class="gallery">
             <figure>
-                <img src="images/salt_lake_temple.jpeg" alt="Salt Lake Temple">
+                <img src="images/salt_lake_temple.jpeg" alt="Salt Lake Temple" loading="lazy">
                 <figcaption>Salt Lake Temple</figcaption>
             </figure>
 
             <figure>
-                <img src="images/praia_cape_verde_temple.jpeg" alt="Praia Cape Verde Temple">
+                <img src="images/praia_cape_verde_temple.jpeg" alt="Praia Cape Verde Temple" loading="lazy">
                 <figcaption>Praia Cape Verde Temple</figcaption>
             </figure>
 
             <figure>
-                <img src="images/vancouver_temple.jpeg" alt="Vancouver British Columbia Temple">
+                <img src="images/vancouver_temple.jpeg" alt="Vancouver British Columbia Temple" loading="lazy">
                 <figcaption>Vancouver British Columbia Temple</figcaption>
             </figure>
 
             <figure>
-                <img src="images/salvador_brazil_temple.jpeg" alt="Salvador Brazil Temple">
+                <img src="images/salvador_brazil_temple.jpeg" alt="Salvador Brazil Temple" loading="lazy">
                 <figcaption>Salvador Brazil Temple</figcaption>
             </figure>
 
             <figure>
-                <img src="images/lisbon_portugal_temple.jpeg" alt="Lisbon Portugal Temple">
+                <img src="images/lisbon_portugal_temple.jpeg" alt="Lisbon Portugal Temple" loading="lazy">
                 <figcaption>Lisbon Portugal Temple</figcaption>
             </figure>
 
             <figure>
-                <img src="images/lagos_nigeria_temple.jpeg" alt="Lagos Nigeria Temple">
+                <img src="images/lagos_nigeria_temple.jpeg" alt="Lagos Nigeria Temple" loading="lazy">
                 <figcaption>Lagos Nigeria Temple</figcaption>
             </figure>
 
             <figure>
-                <img src="images/paris_france_temple.jpeg" alt="Paris France Temple">
+                <img src="images/paris_france_temple.jpeg" alt="Paris France Temple" loading="lazy">
                 <figcaption>Paris France Temple</figcaption>
             </figure>
 
             <figure>
-                <img src="images/madrid_spain_temple.jpeg" alt="Madrid Spain Temple">
+                <img src="images/madrid_spain_temple.jpeg" alt="Madrid Spain Temple" loading="lazy">
                 <figcaption>Madrid Spain Temple</figcaption>
             </figure>
 
             <figure>
-                <img src="images/sydney_australia_temple.jpeg" alt="Sydney Australia Temple">
+                <img src="images/sydney_australia_temple.jpeg" alt="Sydney Australia Temple" loading="lazy">
                 <figcaption>Sydney Australia Temple</figcaption>
             </figure>
         </section>
