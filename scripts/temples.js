@@ -7,15 +7,11 @@ lastModified.textContent = `Last Modified: ${document.lastModified}`;
 
 // ---------- Hamburger Menu ----------
 const menuButton = document.querySelector("#menuButton");
-const navigation = document.querySelector("nav");
+const nav = document.querySelector("nav");
 
 menuButton.addEventListener("click", () => {
-    navigation.classList.toggle("open");
+    nav.classList.toggle("open");
 
-    // Toggle icon ☰ / ✖
-    if (navigation.classList.contains("open")) {
-        menuButton.textContent = "✖";
-    } else {
-        menuButton.textContent = "☰";
-    }
+    const isOpen = nav.classList.contains("open");
+    menuButton.setAttribute("aria-expanded", isOpen);
 });
