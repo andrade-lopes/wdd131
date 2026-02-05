@@ -4,27 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Filtered Temples</title>
+    <meta name="description" content="A filtered temple picture album showcasing temples by age and size.">
 
     <!-- Mobile-first CSS -->
     <link rel="stylesheet" href="styles/filtered-temples.css">
-
 </head>
 
 <body>
-
     <header>
         <h1>Filtered Temples</h1>
 
-        <button id="menuButton" aria-label="Toggle Menu">☰</button>
+        <button id="menuButton" aria-label="Toggle navigation menu" aria-controls="primaryNav" aria-expanded="false">
+            ☰
+        </button>
 
-        <nav>
+        <nav id="primaryNav">
             <ul>
-                <li><a href="#" id="home">Home</a></li>
-                <li><a href="#" id="old">Old</a></li>
-                <li><a href="#" id="new">New</a></li>
-                <li><a href="#" id="large">Large</a></li>
-                <li><a href="#" id="small">Small</a></li>
+                <li><button type="button" id="home">Home</button></li>
+                <li><button type="button" id="old">Old</button></li>
+                <li><button type="button" id="new">New</button></li>
+                <li><button type="button" id="large">Large</button></li>
+                <li><button type="button" id="small">Small</button></li>
             </ul>
         </nav>
     </header>
@@ -32,21 +34,16 @@
     <main>
         <h2 id="filter-title">Home</h2>
 
-        <!-- Cards will be created here dynamically -->
-
         <section id="temples-container"></section>
     </main>
 
     <footer>
-        <p>
-            &copy; <span id="currentYear"></span> • Jose Lopes • Cape Verde
-        </p>
+        <p>&copy; <span id="currentYear"></span> • Jose Lopes • Cape Verde</p>
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
 
     <!-- JavaScript -->
     <script src="scripts/filtered-temples.js"></script>
-
 </body>
 
 </html>
