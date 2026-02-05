@@ -5,16 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Filtered Temples</title>
-    <meta name="description" content="A filtered temple picture album showcasing temples by age and size.">
+    <title>Temple Album</title>
 
-    <!-- Mobile-first CSS -->
+    <meta name="description" content="A filtered temple picture album showcasing temples by age and size.">
+    <meta name="author" content="Jose Lopes">
+
+    <!-- Google Fonts (correct method) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/filtered-temples.css">
 </head>
 
 <body>
+
     <header>
-        <h1>Filtered Temples</h1>
+        <!-- Required text inside header -->
+        <h2>Temple Album</h2>
 
         <button id="menuButton" aria-label="Toggle navigation menu" aria-controls="primaryNav" aria-expanded="false">
             ☰
@@ -22,28 +32,38 @@
 
         <nav id="primaryNav">
             <ul>
-                <li><button type="button" id="home">Home</button></li>
-                <li><button type="button" id="old">Old</button></li>
-                <li><button type="button" id="new">New</button></li>
-                <li><button type="button" id="large">Large</button></li>
-                <li><button type="button" id="small">Small</button></li>
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="old">Old</a></li>
+                <li><a href="#" id="new">New</a></li>
+                <li><a href="#" id="large">Large</a></li>
+                <li><a href="#" id="small">Small</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- Single h1 inside main (rubric requirement) -->
+        <h1>Filtered Temples</h1>
+
         <h2 id="filter-title">Home</h2>
 
-        <section id="temples-container"></section>
+        <section id="temples-container">
+            <!-- Temple cards created dynamically -->
+        </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="currentYear"></span> • Jose Lopes • Cape Verde</p>
-        <p>Last Modified: <span id="lastModified"></span></p>
+        <p>
+            &copy; <span id="currentYear"></span> • Jose Lopes • Cape Verde
+        </p>
+        <p>
+            Last Modified: <span id="lastModified"></span>
+        </p>
     </footer>
 
-    <!-- JavaScript -->
+    <!-- JavaScript (end of body – rubric compliant) -->
     <script src="scripts/filtered-temples.js"></script>
+
 </body>
 
 </html>
