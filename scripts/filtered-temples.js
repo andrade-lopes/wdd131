@@ -7,16 +7,13 @@ lastModifiedSpan.textContent = document.lastModified;
 
 // ---------- Hamburger Menu ----------
 const menuButton = document.querySelector("#menuButton");
-const navigation = document.querySelector("nav");
+const navigation = document.querySelector("#primaryNav");
 
 menuButton.addEventListener("click", () => {
-    navigation.classList.toggle("open");
+    const isOpen = navigation.classList.toggle("open");
 
-    if (navigation.classList.contains("open")) {
-        menuButton.textContent = "✖";
-    } else {
-        menuButton.textContent = "☰";
-    }
+    menuButton.textContent = isOpen ? "✖" : "☰";
+    menuButton.setAttribute("aria-expanded", isOpen);
 });
 
 // ---------- Temple Data ----------
@@ -77,8 +74,6 @@ const temples = [
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
-
-    // ➕ REQUIRED ADDITIONAL TEMPLES (3+)
     {
         templeName: "Praia Cape Verde",
         location: "Praia, Cape Verde",
@@ -139,38 +134,29 @@ function displayTemples(templeList) {
 }
 
 // ---------- Filters ----------
-document.querySelector("#home").addEventListener("click", e => {
-    e.preventDefault();
+document.querySelector("#home").addEventListener("click", () => {
     filterTitle.textContent = "Home";
     displayTemples(temples);
 });
 
-document.querySelector("#old").addEventListener("click", e => {
-    e.preventDefault();
+document.querySelector("#old").addEventListener("click", () => {
     filterTitle.textContent = "Old Temples";
-    const oldTemples = temples.filter(t => new Date(t.dedicated).getFullYear() < 1900);
-    displayTemples(oldTemples);
+    displayTemples(temples.filter(t => new Date(t.dedicated).getFullYear() < 1900));
 });
 
-document.querySelector("#new").addEventListener("click", e => {
-    e.preventDefault();
+document.querySelector("#new").addEventListener("click", () => {
     filterTitle.textContent = "New Temples";
-    const newTemples = temples.filter(t => new Date(t.dedicated).getFullYear() > 2000);
-    displayTemples(newTemples);
+    displayTemples(temples.filter(t => new Date(t.dedicated).getFullYear() > 2000));
 });
 
-document.querySelector("#large").addEventListener("click", e => {
-    e.preventDefault();
+document.querySelector("#large").addEventListener("click", () => {
     filterTitle.textContent = "Large Temples";
-    const largeTemples = temples.filter(t => t.area > 90000);
-    displayTemples(largeTemples);
+    displayTemples(temples.filter(t => t.area > 90000));
 });
 
-document.querySelector("#small").addEventListener("click", e => {
-    e.preventDefault();
+document.querySelector("#small").addEventListener("click", () => {
     filterTitle.textContent = "Small Temples";
-    const smallTemples = temples.filter(t => t.area < 10000);
-    displayTemples(smallTemples);
+    displayTemples(temples.filter(t => t.area < 10000));
 });
 
 // ---------- Initial Load ----------
