@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View today's menu at Prato do Dia CV.">
+    <meta name="author" content="Jose Lopes">
+    <title>Prato do Dia CV | Menu</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <script defer src="scripts/main.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Prato do Dia CV</h1>
+        </div>
+
+        <button id="menu-toggle" aria-label="Open Menu">☰</button>
+
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Today's Menu</h2>
+
+            <div class="filter-buttons">
+                <button data-category="all">All</button>
+                <button data-category="meat">Meat</button>
+                <button data-category="fish">Fish</button>
+                <button data-category="vegetarian">Vegetarian</button>
+            </div>
+
+            <div id="menu-container"></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Prato do Dia CV | Jose Lopes | WDD 131</p>
+        <p><a href="references.html">References</a></p>
+    </footer>
+
+</body>
+
+</html>
